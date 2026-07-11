@@ -33,4 +33,10 @@ export default defineNuxtConfig({
   },
 
   css: ["~/assets/styles.css"],
+
+  vite: {
+    build: {
+      modulePreload: false,
+    },
+  },
 })
