@@ -51,7 +51,7 @@ export const t = {
     footerDesc: "本ページは TORO サーバー運営チームが提供する公式ステータスページです。",
     since: "Since 2024",
     lastUpdatedShort: "／ 最終更新 ",
-    powered: "Powered by TypeScript · Nuxt.js · GitHub Actions",
+    powered: "Powered by TypeScript",
     defaultTitle: "TORO Status",
     defaultSubtitle: "TORO サーバー 稼働状況モニター",
     defaultIntro:
@@ -101,7 +101,7 @@ export const t = {
     lead: "本ページは、TORO サーバーで提供する各サービスの稼働状況をリアルタイムに監視・公開する公式ステータスページです。障害や遅延が発生した場合は、本ページに反映されます。",
     rows: [
       { k: "目的", v: "TORO サーバーで提供する各サービスの稼働状況の公開" },
-      { k: "監視間隔", v: "10分間隔での自動チェック（GitHub Actions）" },
+      { k: "監視間隔", v: "10分間隔での自動チェック" },
       { k: "監視方式", v: "Minecraft Server List Ping ／ HTTP ヘルスチェック" },
     ],
   },
