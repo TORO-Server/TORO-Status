@@ -153,7 +153,7 @@ async function minecraftPing(
   // Resolve SRV record first; handshake still uses the original host for virtual hosting.
   const { host: connectHost, port: connectPort, srvUsed } = await resolveSrv(host, port);
 
-  return new Promise((resolve) => {
+  return new Promise<CheckResult>((resolve) => {
     const start = performance.now();
     let settled = false;
     let connected = false;
@@ -188,19 +188,30 @@ async function minecraftPing(
           });
         }
       } catch (e) {
+        // Connected and received data, but failed to parse: treat as up (TCP reachable).
         finish({
-          up: false,
-          responseTime: null,
+          up: true,
+          responseTime: Math.round(performance.now() - start),
+          players: null,
+          version: null,
           error: String(e instanceof Error ? e.message : e),
         });
       }
     });
 
     socket.on("timeout", () =>
-      finish({ up: false, responseTime: null, error: "timeout" })
+      finish({
+        up: connected,
+        responseTime: connected ? Math.round(performance.now() - start) : null,
+        error: "timeout",
+      })
     );
     socket.on("error", (e: NodeJS.ErrnoException) =>
-      finish({ up: false, responseTime: null, error: e.code || e.message })
+      finish({
+        up: connected,
+        responseTime: connected ? Math.round(performance.now() - start) : null,
+        error: e.code || e.message,
+      })
     );
     socket.on("close", () => {
       // Connected but closed before a parseable status: treat as up (TCP reachable).
@@ -237,7 +248,7 @@ async function httpCheck(url: string, timeoutMs: number): Promise<CheckResult> {
     await res.arrayBuffer().catch(() => {});
     const responseTime = Math.round(performance.now() - start);
     return {
-      up: res.status >= 200 && res.status < 400,
+      up: res.status < 500,
       responseTime,
       code: res.status,
     };

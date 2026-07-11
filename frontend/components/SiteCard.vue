@@ -6,10 +6,18 @@ const props = defineProps<{ site: SiteSummary; flash?: boolean }>();
 
 // config の icon は 404 し得るのでモノグラムにフォールバック。
 const iconFailed = ref(false);
-const initials = computed(
-  () =>
-    props.site.name.replace(/[^A-Za-z0-9]/g, "").slice(0, 2).toUpperCase() || "##"
+
+watch(
+  () => props.site.icon,
+  () => {
+    iconFailed.value = false;
+  }
 );
+
+const initials = computed(() => {
+  const cleanName = props.site.name.replace(/[\s()（）[\]{}'"`.,\/\\_+\-*&^%$#@!~?]/g, "");
+  return cleanName.slice(0, 2).toUpperCase() || "##";
+});
 
 function fmtUptime(v: number | null | undefined): string {
   return v === null || v === undefined ? "—" : `${v}%`;
@@ -26,7 +34,7 @@ function fmtRt(v: number | null | undefined): string {
         v-if="site.icon && !iconFailed"
         class="icon"
         :src="site.icon"
-        alt=""
+        :alt="site.name"
         loading="lazy"
         @error="iconFailed = true"
       />

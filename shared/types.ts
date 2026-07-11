@@ -121,7 +121,7 @@ export interface Summary {
 }
 
 /** Result of a single probe, before aggregation. */
-export interface CheckResult {
+export type CheckResult = {
   up: boolean;
   responseTime: number | null;
   players?: Players | null;
@@ -129,4 +129,4 @@ export interface CheckResult {
   favicon?: string | null;
   code?: number;
   error?: string;
-}
+};
