@@ -6,7 +6,7 @@
   },
   "logoUrl": "https://status.torosaba.net/logo.png",
   "github": "https://github.com/TORO-Server/upptime",
-  "generatedAt": "2026-07-11T06:03:38.000Z",
+  "generatedAt": "2026-07-11T06:29:13.000Z",
   "sites": [
     {
       "slug": "toro-minecraft-server",
@@ -16,13 +16,13 @@
       "target": "torosaba.net",
       "url": "https://torosaba.net/",
       "status": "up",
-      "responseTime": 409,
+      "responseTime": 435,
       "players": {
-        "online": 3,
+        "online": 2,
         "max": 100
       },
       "version": "1.12.2-1.20.4",
-      "lastChecked": "2026-07-11T06:03:38.000Z",
+      "lastChecked": "2026-07-11T06:29:13.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
@@ -31,13 +31,12 @@
         "all": 100
       },
       "avgResponseTime": {
-        "24h": 377,
+        "24h": 380,
         "7d": 444,
         "30d": 430,
         "all": 430
       },
       "sparkline": [
-        469,
         489,
         321,
         378,
@@ -84,7 +83,8 @@
         107,
         101,
         77,
-        409
+        409,
+        435
       ],
       "bars": [
         {
@@ -217,13 +217,13 @@
       "target": "minuma.torosaba.net",
       "url": "https://torosaba.net/",
       "status": "up",
-      "responseTime": 413,
+      "responseTime": 472,
       "players": {
-        "online": 3,
+        "online": 2,
         "max": 100
       },
       "version": "0.0.0-9.99.9",
-      "lastChecked": "2026-07-11T06:03:38.000Z",
+      "lastChecked": "2026-07-11T06:29:13.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
@@ -232,13 +232,12 @@
         "all": 100
       },
       "avgResponseTime": {
-        "24h": 383,
+        "24h": 388,
         "7d": 443,
         "30d": 434,
         "all": 434
       },
       "sparkline": [
-        336,
         461,
         318,
         363,
@@ -285,7 +284,8 @@
         197,
         99,
         71,
-        413
+        413,
+        472
       ],
       "bars": [
         {
@@ -418,13 +418,13 @@
       "target": "lgb.torosaba.net",
       "url": "https://torosaba.net/",
       "status": "up",
-      "responseTime": 477,
+      "responseTime": 715,
       "players": {
-        "online": 3,
+        "online": 2,
         "max": 100
       },
       "version": "0.0.0-9.99.9",
-      "lastChecked": "2026-07-11T06:03:38.000Z",
+      "lastChecked": "2026-07-11T06:29:13.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
@@ -433,13 +433,12 @@
         "all": 100
       },
       "avgResponseTime": {
-        "24h": 496,
-        "7d": 585,
-        "30d": 592,
-        "all": 592
+        "24h": 510,
+        "7d": 587,
+        "30d": 593,
+        "all": 593
       },
       "sparkline": [
-        656,
         667,
         486,
         495,
@@ -486,7 +485,8 @@
         197,
         131,
         93,
-        477
+        477,
+        715
       ],
       "bars": [
         {
@@ -619,13 +619,13 @@
       "target": "doro.torosaba.net",
       "url": "https://torosaba.net/",
       "status": "up",
-      "responseTime": 402,
+      "responseTime": 499,
       "players": {
-        "online": 3,
+        "online": 2,
         "max": 100
       },
       "version": "0.0.0-9.99.9",
-      "lastChecked": "2026-07-11T06:03:38.000Z",
+      "lastChecked": "2026-07-11T06:29:13.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
@@ -634,13 +634,12 @@
         "all": 100
       },
       "avgResponseTime": {
-        "24h": 389,
-        "7d": 443,
+        "24h": 396,
+        "7d": 444,
         "30d": 446,
         "all": 446
       },
       "sparkline": [
-        466,
         524,
         323,
         382,
@@ -687,7 +686,8 @@
         196,
         117,
         75,
-        402
+        402,
+        499
       ],
       "bars": [
         {
@@ -820,13 +820,13 @@
       "target": "toto.torosaba.net",
       "url": "https://torosaba.net/",
       "status": "up",
-      "responseTime": 390,
+      "responseTime": 441,
       "players": {
-        "online": 3,
+        "online": 2,
         "max": 100
       },
       "version": "0.0.0-9.99.9",
-      "lastChecked": "2026-07-11T06:03:38.000Z",
+      "lastChecked": "2026-07-11T06:29:13.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
@@ -835,13 +835,12 @@
         "all": 100
       },
       "avgResponseTime": {
-        "24h": 390,
+        "24h": 393,
         "7d": 444,
         "30d": 455,
         "all": 455
       },
       "sparkline": [
-        539,
         491,
         310,
         371,
@@ -888,7 +887,8 @@
         182,
         116,
         82,
-        390
+        390,
+        441
       ],
       "bars": [
         {
@@ -1021,25 +1021,24 @@
       "target": "https://map.torosaba.net/",
       "url": "https://map.torosaba.net/",
       "status": "up",
-      "responseTime": 176,
+      "responseTime": 119,
       "players": null,
       "version": null,
-      "lastChecked": "2026-07-11T06:03:38.000Z",
+      "lastChecked": "2026-07-11T06:29:13.000Z",
       "error": null,
       "uptime": {
-        "24h": 26.67,
-        "7d": 51.76,
-        "30d": 83.98,
-        "all": 83.98
+        "24h": 31.25,
+        "7d": 52.33,
+        "30d": 84.05,
+        "all": 84.05
       },
       "avgResponseTime": {
-        "24h": 168,
-        "7d": 371,
-        "30d": 561,
-        "all": 561
+        "24h": 165,
+        "7d": 368,
+        "30d": 559,
+        "all": 559
       },
       "sparkline": [
-        613,
         610,
         457,
         null,
@@ -1086,7 +1085,8 @@
         266,
         150,
         142,
-        176
+        176,
+        119
       ],
       "bars": [
         {
@@ -1207,7 +1207,7 @@
         },
         {
           "date": "2026-07-11",
-          "uptime": 33.33
+          "uptime": 38.46
         }
       ]
     },
@@ -1219,25 +1219,24 @@
       "target": "https://pass-api.torosaba.net/",
       "url": "https://pass-api.torosaba.net/",
       "status": "up",
-      "responseTime": 140,
+      "responseTime": 85,
       "players": null,
       "version": null,
-      "lastChecked": "2026-07-11T06:03:38.000Z",
+      "lastChecked": "2026-07-11T06:29:13.000Z",
       "error": null,
       "uptime": {
-        "24h": 26.67,
-        "7d": 50.59,
-        "30d": 83.59,
-        "all": 83.59
+        "24h": 31.25,
+        "7d": 51.16,
+        "30d": 83.66,
+        "all": 83.66
       },
       "avgResponseTime": {
-        "24h": 124,
-        "7d": 321,
-        "30d": 519,
-        "all": 519
+        "24h": 122,
+        "7d": 318,
+        "30d": 517,
+        "all": 517
       },
       "sparkline": [
-        616,
         594,
         399,
         null,
@@ -1284,7 +1283,8 @@
         182,
         85,
         103,
-        140
+        140,
+        85
       ],
       "bars": [
         {
@@ -1405,7 +1405,7 @@
         },
         {
           "date": "2026-07-11",
-          "uptime": 33.33
+          "uptime": 38.46
         }
       ]
     },
@@ -1417,25 +1417,24 @@
       "target": "https://sound.torosaba.net/",
       "url": "https://sound.torosaba.net/",
       "status": "up",
-      "responseTime": 141,
+      "responseTime": 84,
       "players": null,
       "version": null,
-      "lastChecked": "2026-07-11T06:03:38.000Z",
+      "lastChecked": "2026-07-11T06:29:13.000Z",
       "error": null,
       "uptime": {
-        "24h": 26.67,
-        "7d": 63.53,
-        "30d": 87.89,
-        "all": 87.89
+        "24h": 31.25,
+        "7d": 63.95,
+        "30d": 87.94,
+        "all": 87.94
       },
       "avgResponseTime": {
-        "24h": 147,
-        "7d": 178,
-        "30d": 222,
-        "all": 222
+        "24h": 143,
+        "7d": 177,
+        "30d": 221,
+        "all": 221
       },
       "sparkline": [
-        139,
         77,
         153,
         274,
@@ -1482,7 +1481,8 @@
         361,
         79,
         74,
-        141
+        141,
+        84
       ],
       "bars": [
         {
@@ -1603,7 +1603,7 @@
         },
         {
           "date": "2026-07-11",
-          "uptime": 33.33
+          "uptime": 38.46
         }
       ]
     },
@@ -1615,25 +1615,24 @@
       "target": "https://status.torosaba.net/",
       "url": "https://status.torosaba.net/",
       "status": "up",
-      "responseTime": 179,
+      "responseTime": 165,
       "players": null,
       "version": null,
-      "lastChecked": "2026-07-11T06:03:38.000Z",
+      "lastChecked": "2026-07-11T06:29:13.000Z",
       "error": null,
       "uptime": {
-        "24h": 26.67,
-        "7d": 63.53,
-        "30d": 87.89,
-        "all": 87.89
+        "24h": 31.25,
+        "7d": 63.95,
+        "30d": 87.94,
+        "all": 87.94
       },
       "avgResponseTime": {
         "24h": 164,
-        "7d": 204,
+        "7d": 203,
         "30d": 254,
         "all": 254
       },
       "sparkline": [
-        302,
         144,
         201,
         253,
@@ -1680,7 +1679,8 @@
         412,
         112,
         105,
-        179
+        179,
+        165
       ],
       "bars": [
         {
@@ -1801,7 +1801,7 @@
         },
         {
           "date": "2026-07-11",
-          "uptime": 33.33
+          "uptime": 38.46
         }
       ]
     }
