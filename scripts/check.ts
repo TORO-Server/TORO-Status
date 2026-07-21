@@ -234,16 +234,37 @@ async function minecraftPing(
 // ---------------------------------------------------------------------------
 
 function extractFaviconUrl(html: string, baseUrl: string): string | null {
-  const match =
-    html.match(/<link[^>]+rel=["']?(?:shortcut\s+)?(?:apple-touch-)?icon["']?[^>]+href=["']?([^"'>\s]+)["']?/i) ||
-    html.match(/<link[^>]+href=["']?([^"'>\s]+)["']?[^>]+rel=["']?(?:shortcut\s+)?(?:apple-touch-)?icon["']?/i);
-  if (match && match[1]) {
+  const linkTags = html.match(/<link\s+[^>]+>/gi) || [];
+  const candidates: { href: string; isSvg: boolean }[] = [];
+
+  for (const tag of linkTags) {
+    const relMatch = tag.match(/rel=["']?([^"'>\s]+(?:\s+[^"'>\s]+)*)["']?/i);
+    if (!relMatch || !relMatch[1]) continue;
+
+    const relValues = relMatch[1].toLowerCase().split(/\s+/);
+    const isIconRel = relValues.some((r) =>
+      ["icon", "shortcut", "apple-touch-icon", "mask-icon"].includes(r)
+    );
+    if (!isIconRel) continue;
+
+    const hrefMatch = tag.match(/href=["']?([^"'>\s]+)["']?/i);
+    if (!hrefMatch || !hrefMatch[1]) continue;
+
     try {
-      return new URL(match[1], baseUrl).href;
+      const fullUrl = new URL(hrefMatch[1], baseUrl).href;
+      const typeMatch = tag.match(/type=["']?([^"'>\s]+)["']?/i);
+      const typeVal = typeMatch && typeMatch[1] ? typeMatch[1].toLowerCase() : "";
+      const isSvg = typeVal.includes("svg") || fullUrl.toLowerCase().endsWith(".svg");
+      candidates.push({ href: fullUrl, isSvg });
     } catch {
-      // Invalid URL in href
+      // Invalid URL
     }
   }
+
+  const svgCandidate = candidates.find((c) => c.isSvg);
+  if (svgCandidate) return svgCandidate.href;
+  if (candidates.length > 0 && candidates[0]) return candidates[0].href;
+
   try {
     return new URL("/favicon.ico", baseUrl).href;
   } catch {
