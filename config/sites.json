@@ -20,7 +20,6 @@
       "type": "minecraft",
       "host": "torosaba.net",
       "port": 27248,
-      "icon": "https://status.torosaba.net/toro.png",
       "url": "https://torosaba.net/"
     },
     {
@@ -29,7 +28,6 @@
       "type": "minecraft",
       "host": "minuma.torosaba.net",
       "port": 27248,
-      "icon": "https://status.torosaba.net/minuma.png",
       "url": "https://torosaba.net/"
     },
     {
@@ -38,7 +36,6 @@
       "type": "minecraft",
       "host": "lgb.torosaba.net",
       "port": 27248,
-      "icon": "https://status.torosaba.net/lgbtoro.png",
       "url": "https://torosaba.net/"
     },
     {
@@ -47,7 +44,6 @@
       "type": "minecraft",
       "host": "doro.torosaba.net",
       "port": 27248,
-      "icon": "https://status.torosaba.net/doro.png",
       "url": "https://torosaba.net/"
     },
     {
@@ -56,7 +52,6 @@
       "type": "minecraft",
       "host": "toto.torosaba.net",
       "port": 27248,
-      "icon": "https://status.torosaba.net/toto.png",
       "url": "https://torosaba.net/"
     },
     {
@@ -82,8 +77,7 @@
       "slug": "toro-status-page",
       "name": "TORO Status Page",
       "type": "http",
-      "url": "https://status.torosaba.net/",
-      "icon": "https://status.torosaba.net/logo.png"
+      "url": "https://status.torosaba.net/"
     }
   ]
 }

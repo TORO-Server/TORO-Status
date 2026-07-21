@@ -233,6 +233,24 @@ async function minecraftPing(
 // HTTP check
 // ---------------------------------------------------------------------------
 
+function extractFaviconUrl(html: string, baseUrl: string): string | null {
+  const match =
+    html.match(/<link[^>]+rel=["']?(?:shortcut\s+)?(?:apple-touch-)?icon["']?[^>]+href=["']?([^"'>\s]+)["']?/i) ||
+    html.match(/<link[^>]+href=["']?([^"'>\s]+)["']?[^>]+rel=["']?(?:shortcut\s+)?(?:apple-touch-)?icon["']?/i);
+  if (match && match[1]) {
+    try {
+      return new URL(match[1], baseUrl).href;
+    } catch {
+      // Invalid URL in href
+    }
+  }
+  try {
+    return new URL("/favicon.ico", baseUrl).href;
+  } catch {
+    return null;
+  }
+}
+
 async function httpCheck(url: string, timeoutMs: number): Promise<CheckResult> {
   const start = performance.now();
   try {
@@ -244,13 +262,26 @@ async function httpCheck(url: string, timeoutMs: number): Promise<CheckResult> {
         "User-Agent": "TORO-Status/2.0 (+https://status.torosaba.net)",
       },
     });
-    // Drain the body so the connection can close cleanly.
-    await res.arrayBuffer().catch(() => {});
+    let favicon: string | null = null;
+    const contentType = res.headers.get("content-type") || "";
+    if (res.ok && contentType.includes("text/html")) {
+      const text = await res.text().catch(() => "");
+      favicon = extractFaviconUrl(text, res.url || url);
+    } else {
+      await res.arrayBuffer().catch(() => {});
+      try {
+        favicon = new URL("/favicon.ico", res.url || url).href;
+      } catch {
+        favicon = null;
+      }
+    }
+
     const responseTime = Math.round(performance.now() - start);
     return {
       up: res.status < 500,
       responseTime,
       code: res.status,
+      favicon,
     };
   } catch (e) {
     const err = e as { name?: string; cause?: { code?: string }; message?: string };
@@ -370,7 +401,7 @@ async function checkSite(
     slug: site.slug,
     name: site.name,
     type: site.type,
-    icon: check.favicon ?? site.icon ?? null,
+    icon: site.icon ?? check.favicon ?? null,
     target,
     url: site.url ?? null,
     status,
