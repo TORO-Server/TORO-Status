@@ -19,7 +19,7 @@
       "name": "TORO Minecraft Server",
       "type": "minecraft",
       "host": "torosaba.net",
-      "port": 27248,
+      "port": 25565,
       "url": "https://torosaba.net/"
     },
     {
@@ -27,7 +27,7 @@
       "name": "TORO Minecraft Server (minuma)",
       "type": "minecraft",
       "host": "minuma.torosaba.net",
-      "port": 27248,
+      "port": 25565,
       "url": "https://torosaba.net/"
     },
     {
@@ -35,7 +35,7 @@
       "name": "TORO Minecraft Server (lgb)",
       "type": "minecraft",
       "host": "lgb.torosaba.net",
-      "port": 27248,
+      "port": 25565,
       "url": "https://torosaba.net/"
     },
     {
@@ -43,7 +43,7 @@
       "name": "TORO Minecraft Server (doro)",
       "type": "minecraft",
       "host": "doro.torosaba.net",
-      "port": 27248,
+      "port": 25565,
       "url": "https://torosaba.net/"
     },
     {
@@ -51,7 +51,7 @@
       "name": "TORO Minecraft Server (toto)",
       "type": "minecraft",
       "host": "toto.torosaba.net",
-      "port": 27248,
+      "port": 25565,
       "url": "https://torosaba.net/"
     },
     {
@@ -60,6 +60,12 @@
       "type": "http",
       "url": "https://map.torosaba.net/",
       "icon": "https://map.torosaba.net/images/icons/favicon.ico"
+    },
+    {
+      "slug": "toro-bluemap",
+      "name": "TORO BlueMap",
+      "type": "http",
+      "url": "https://3d-map.torosaba.net/"
     },
     {
       "slug": "toro-pass-api",
