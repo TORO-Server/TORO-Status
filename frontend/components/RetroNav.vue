@@ -113,14 +113,27 @@ defineProps<{ items: NavItem[]; lastUpdate?: string }>();
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 4px 10px;
+    gap: 0 4px;
     width: 100%;
   }
   .nav__list li {
     padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  /* 指で押しやすい高さ（40px）を確保 */
+  .nav__list a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 6px;
+  }
+  .nav__list .ext {
+    font-size: 0.75rem;
+    margin-left: -4px;
   }
   .nav__upd {
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     margin-top: 2px;
   }
 }

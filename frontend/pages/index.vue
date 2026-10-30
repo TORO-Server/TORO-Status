@@ -2,29 +2,49 @@
 import type { Summary, Status } from "~/types";
 
 // ビルド時: サーバーAPIが public/data/summary.json を読み込んでHTMLに埋め込む
-// JS有効時: 60秒ごとに静的ファイルを直接フェッチして更新
+// JS有効時: 表示直後・画面に戻ったとき・オンライン復帰時、および60秒ごとに
+// 静的ファイルを直接フェッチして更新（SW はネットワーク優先、オフライン時のみ前回のコピー）
 const { data, pending, error: fetchError } = useAsyncData<Summary>(
   "summary",
   () => $fetch("/api/summary")
 );
 
+const offline = ref(false);
+
 async function clientRefresh(): Promise<void> {
   try {
-    const res = await $fetch<Summary>(`/data/summary.json?_=${Date.now()}`, {
+    const res = await $fetch.raw<Summary>(`/data/summary.json?_=${Date.now()}`, {
       cache: "no-store",
     });
-    data.value = res;
+    if (res._data) data.value = res._data;
+    // SW がキャッシュのコピーで応答した＝ネットワークから取れなかった
+    offline.value = res.headers.get("x-toro-cache") === "fallback";
   } catch {
     // エラー時は既存データを維持
+    offline.value = true;
   }
+}
+
+function onVisible(): void {
+  if (document.visibilityState === "visible") void clientRefresh();
+}
+function onConnectivity(): void {
+  void clientRefresh();
 }
 
 let timer: ReturnType<typeof setInterval> | null = null;
 onMounted(() => {
+  void clientRefresh();
   timer = setInterval(() => void clientRefresh(), 60000);
+  document.addEventListener("visibilitychange", onVisible);
+  window.addEventListener("online", onConnectivity);
+  window.addEventListener("offline", onConnectivity);
 });
 onUnmounted(() => {
   if (timer) clearInterval(timer);
+  document.removeEventListener("visibilitychange", onVisible);
+  window.removeEventListener("online", onConnectivity);
+  window.removeEventListener("offline", onConnectivity);
 });
 
 const github = computed(
@@ -83,6 +103,7 @@ useHead({
           {{ data?.intro?.message || t.page.defaultIntro }}
         </p>
         <p v-if="updatedAt" class="updated">{{ t.page.lastUpdated }}{{ updatedAt }}</p>
+        <p v-if="offline" class="offline" role="status">{{ t.page.offline }}</p>
       </header>
 
       <Marquee :text="t.marquee" />
@@ -174,6 +195,17 @@ useHead({
   font-family: var(--mono);
   font-size: 0.78rem;
   color: var(--ink-soft);
+}
+.offline {
+  display: inline-block;
+  margin: 6px 0 0;
+  padding: 2px 10px;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: bold;
+  color: var(--degraded);
+  background: #fff7e0;
+  border: 1px solid var(--degraded);
 }
 
 /* ---- columns ---- */

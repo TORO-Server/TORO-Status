@@ -40,31 +40,22 @@ function fmtRt(v: number | null | undefined): string {
       />
       <span v-else class="icon icon--mono">{{ initials }}</span>
 
-      <div class="title">
+      <!-- 名前と接続先をまとめて 1 つのリンクに（押せる範囲を広く、同じリンクの重複もなくす） -->
+      <a
+        v-if="site.url"
+        :href="site.url"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="title title-link"
+      >
         <div class="name">
-          <a
-            v-if="site.url"
-            :href="site.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="site-link"
-          >
-            {{ site.name }}<span class="ext-icon">↗</span>
-          </a>
-          <span v-else>{{ site.name }}</span>
+          <span class="name-text">{{ site.name }}</span><span class="ext-icon">↗</span>
         </div>
-        <div class="target">
-          <a
-            v-if="site.url"
-            :href="site.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="target-link"
-          >
-            {{ site.target }}
-          </a>
-          <span v-else>{{ site.target }}</span>
-        </div>
+        <div class="target">{{ site.target }}</div>
+      </a>
+      <div v-else class="title">
+        <div class="name">{{ site.name }}</div>
+        <div class="target">{{ site.target }}</div>
       </div>
       <span class="pill" :class="site.status">
         <span class="dot" />
@@ -275,13 +266,21 @@ function fmtRt(v: number | null | undefined): string {
   }
 }
 
-.site-link {
+.title-link {
+  display: block;
   color: inherit;
   text-decoration: none;
 }
-.site-link:hover {
+.title-link:hover {
+  background: transparent;
+}
+.title-link:hover .name-text {
   text-decoration: underline;
   color: var(--rule);
+  background: #ffff99;
+}
+.title-link:hover .target {
+  text-decoration: underline;
 }
 .ext-icon {
   font-size: 0.75em;
@@ -290,11 +289,16 @@ function fmtRt(v: number | null | undefined): string {
   display: inline-block;
   vertical-align: middle;
 }
-.target-link {
-  color: inherit;
-  text-decoration: none;
-}
-.target-link:hover {
-  text-decoration: underline;
+
+/* スマホ: 12px 未満の文字をなくし、リンクは押しやすい高さに */
+@media (max-width: 720px) {
+  .title-link {
+    min-height: 40px;
+  }
+  .target,
+  .pill,
+  .stat-label {
+    font-size: 0.75rem;
+  }
 }
 </style>

@@ -134,6 +134,7 @@ function handleError() {
 
 @media (max-width: 480px) {
   .err-box { padding: 20px 16px; }
+  .btn-home { min-height: 44px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

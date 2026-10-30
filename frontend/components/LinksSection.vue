@@ -41,4 +41,19 @@ const links = computed(() => [
   font-size: 0.8rem;
   margin-top: 1px;
 }
+
+/* スマホ: リンクを押しやすい高さに */
+@media (max-width: 720px) {
+  .links__item {
+    padding: 0 0 6px;
+  }
+  .links__item a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+  }
+  .links__note {
+    margin-top: 0;
+  }
+}
 </style>

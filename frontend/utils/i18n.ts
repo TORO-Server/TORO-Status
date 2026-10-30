@@ -45,6 +45,7 @@ export const t = {
 
   page: {
     lastUpdated: "最終更新：",
+    offline: "接続できないため、前回取得した状況を表示中です",
     loading: "読み込み中です…",
     fetchErrorLine1: "ステータスデータの読み込みに失敗しました。",
     fetchErrorLine2: "しばらく経ってから再度お試しください。",

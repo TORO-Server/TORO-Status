@@ -30,6 +30,12 @@ body {
   overflow-x: hidden;
 }
 
+/* iOS の横向き時の文字自動拡大を止める（ユーザーのピンチズームは妨げない） */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 body {
   min-height: 100vh;
   color: #e6ecff;
@@ -88,7 +94,11 @@ a:hover {
 .page {
   max-width: 980px;
   margin: 0 auto;
-  padding: 16px 10px 44px;
+  /* safe-area はノッチ端末・ホーム画面アプリ用（通常のPCでは 0 なので見た目は変わらない） */
+  padding: calc(16px + env(safe-area-inset-top, 0px))
+    max(10px, env(safe-area-inset-right, 0px))
+    calc(44px + env(safe-area-inset-bottom, 0px))
+    max(10px, env(safe-area-inset-left, 0px));
 }
 .frame {
   background: var(--paper);
@@ -164,8 +174,17 @@ a:hover {
   font-size: 0.74rem;
 }
 
+@media (max-width: 720px) {
+  .foot__tech { font-size: 0.75rem; }
+}
+
 @media (max-width: 480px) {
-  .page { padding: 8px 4px 24px; }
+  .page {
+    padding: calc(8px + env(safe-area-inset-top, 0px))
+      max(4px, env(safe-area-inset-right, 0px))
+      calc(24px + env(safe-area-inset-bottom, 0px))
+      max(4px, env(safe-area-inset-left, 0px));
+  }
   .frame { padding: 8px 8px 12px; }
 }
 
