@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Define the text only once to ensure perfect alignment -->
+    <g id="logo-text">
+        <text x="50%" y="45%" font-family="'Times New Roman', Times, serif" font-weight="bold" font-size="160" text-anchor="middle" dominant-baseline="middle" letter-spacing="0">TORO</text>
+        <text x="50%" y="72%" font-family="'Times New Roman', Times, serif" font-weight="normal" font-size="60" text-anchor="middle" dominant-baseline="middle" letter-spacing="2">Server</text>
+    </g>
+    
+    <!-- Clipping paths for the split design -->
+    <clipPath id="clip-left">
+      <rect x="0" y="0" width="256" height="512" />
+    </clipPath>
+    <clipPath id="clip-right">
+      <rect x="256" y="0" width="256" height="512" />
+    </clipPath>
+  </defs>
+
+  <!-- Left Half: Black BG, White Text -->
+  <g clip-path="url(#clip-left)">
+    <rect x="0" y="0" width="512" height="512" fill="black" />
+    <use href="#logo-text" fill="white" />
+  </g>
+
+  <!-- Right Half: White BG, Black Text -->
+  <g clip-path="url(#clip-right)">
+    <rect x="0" y="0" width="512" height="512" fill="white" />
+    <use href="#logo-text" fill="black" />
+  </g>
+</svg>
