@@ -175,6 +175,16 @@ async function minecraftPing(
     });
 
     socket.on("data", (d: Buffer) => {
+      if (chunks.length + d.length > 1024 * 1024) {
+        finish({
+          up: connected,
+          responseTime: Math.round(performance.now() - start),
+          players: null,
+          version: null,
+          error: "response too large",
+        });
+        return;
+      }
       chunks = Buffer.concat([chunks, d]);
       try {
         const parsed = parseStatusResponse(chunks);
@@ -286,10 +296,10 @@ async function httpCheck(url: string, timeoutMs: number): Promise<CheckResult> {
     let favicon: string | null = null;
     const contentType = res.headers.get("content-type") || "";
     if (res.ok && contentType.includes("text/html")) {
-      const text = await res.text().catch(() => "");
+      const text = (await res.text().catch(() => "")).slice(0, 65536);
       favicon = extractFaviconUrl(text, res.url || url);
     } else {
-      await res.arrayBuffer().catch(() => {});
+      res.body?.cancel().catch(() => {});
       try {
         favicon = new URL("/favicon.ico", res.url || url).href;
       } catch {
