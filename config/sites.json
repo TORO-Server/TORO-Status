@@ -1,8 +1,8 @@
 {
   "name": "TORO Status",
   "cname": "status.torosaba.net",
-  "logoUrl": "https://status.torosaba.net/logo.png",
-  "favicon": "https://status.torosaba.net/logo.png",
+  "logoUrl": "https://status.torosaba.net/logo.svg",
+  "favicon": "https://status.torosaba.net/logo.svg",
   "github": "https://github.com/TORO-Server/upptime",
   "intro": {
     "title": "栗目な瞳でTOROサーバーの状態を監視します!",
