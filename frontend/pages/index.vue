@@ -48,7 +48,7 @@ onUnmounted(() => {
 });
 
 const github = computed(
-  () => data.value?.github ?? "https://github.com/TORO-Server/upptime"
+  () => data.value?.github ?? "https://github.com/TORO-Server/TORO-Status"
 );
 
 const navItems = computed(() => [

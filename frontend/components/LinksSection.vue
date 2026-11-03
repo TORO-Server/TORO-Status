@@ -2,7 +2,7 @@
 // 関連リンク。企業公式として中立・敬体。相互リンク募集やバナー配布は行わない。
 const props = defineProps<{ github?: string | null }>();
 const repo = computed(
-  () => props.github ?? "https://github.com/TORO-Server/upptime"
+  () => props.github ?? "https://github.com/TORO-Server/TORO-Status"
 );
 
 const links = computed(() => [

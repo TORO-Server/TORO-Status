@@ -3,7 +3,7 @@
   "cname": "status.torosaba.net",
   "logoUrl": "https://status.torosaba.net/logo.svg",
   "favicon": "https://status.torosaba.net/logo.svg",
-  "github": "https://github.com/TORO-Server/upptime",
+  "github": "https://github.com/TORO-Server/TORO-Status",
   "intro": {
     "title": "栗目な瞳でTOROサーバーの状態を監視します!",
     "message": "TOROサーバーで稼働しているサービスの状態を監視しています。"
