@@ -6,38 +6,37 @@
   },
   "logoUrl": "https://status.torosaba.net/logo.svg",
   "github": "https://github.com/TORO-Server/upptime",
-  "generatedAt": "2026-11-15T07:38:53.000Z",
+  "generatedAt": "2026-11-15T14:58:27.000Z",
   "sites": [
     {
       "slug": "toro-minecraft-server",
       "name": "TORO Minecraft Server",
       "type": "minecraft",
-      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAHWklEQVR4Xr2YZ4xMXRiAR2/RW3QSETVZJIIN0YXVW0SQxQ/l04mWT41VFktYS/TeVu+iR129RaIE0UWJxerM95hrzp77zu7MSl7f82Ny77ln5znnzjnv+571eP8ynr+NFGojfepIoTbSp44UaiN96kihNtKnjhRqI33qSKE20qeOFGojfepIoTbSp44UaiN96kihNtKnjhRqI33qSKE20qeOFGojfepIoTbSp44UaiN96kihNtKnjhRqI33qSKE20qeOFGojfepIoTbSp44UaiN96kihNtKnjhRqI33qGNPu3bsHDRo0fPjwMWPGjB079l8/48aNGzVq1LBhwwYMGHD9+nVrbN6kpKS4uLgePXr84yMyMnLy5MkvXryw+6AIDw+fOHEij6ZOnRoTEzNv3rzY2NiRI0dWqVJFjsZH9uzZ+/btu2zZslgfy5cvZxiFChWS/RyMqXfv3s2bN7948WKSj+jo6GzZst26devz58+JiYmHDx8uX778ypUrTf8LFy5Ur159/fr1P378cFp+/vx54MABhrVjxw7TzbHwVUw+Pj6ei4wZM+bMmTMiIuLatWszZ850D8fDd/LNnTt3Tp8+vdOSLl26xo0b07lVq1buvj6MqUuXLu/fvze3p06dKlu2rLmFhIQE3qJzfePGjeLFi1+5csXu4HD//v1ixYoxYefWiNauXTtw4EDL7OGlfvjwoVGjRqalUqVKjx49CgsLs3r9plSpUo8fP27QoIF8YMTr1q0z13D27Fleud0CGzdu5JNXXrVq1Tlz5oinhlWrVpUuXfrLly9eawL8eiwMy/yLQ4cORUVFOde8cn7/wYMHu7sk07Vr1wcPHmTJksXVKuV+UpyAw759+3LlyvXx40f5wM/Xr18LFCiwYcMGrzWBFStW9OvXzzL/4ujRo2w557pp06bv3r1jA7i7JJMpU6aXL1+yulytUu4nyATYzewW2eqmXbt2PXv29AadQOXKlV+/fs3acG7nzp27Z88eu0MgW7ZsYXO7mqTZT5AJNGnSpH///rLVzZAhQ+rVq+d1T4Dgljt3bn49vpkOKGrXrm067N+/nwBlblNk1qxZx44dczVJs58gE6hbty7RVra6YWHUqlXL657Arl27onxcunRp0aJFGTJksAbiOX78eGBQEvC3Z86ccTVJs58gE2jbtq2zPILQp0+fli1bet0TMJu4Zs2aT548IaSap7B169alS5faLYEsWLBg586driZp9hNkAgRTorVsdcPrHz9+vDeVCXh8wzXb14FbMoDdEsjp06cnTJjgapJmP0EmcPv2bZLR3bt35QM/BDs63Lx505t6GCXks4MJVqaFtPPt2zc+TYuA7U6HihUrulql3M/JkyfLlSsnW/0QTzp27Chb/ZATqS+cayMiz4g8wIJhSdgt8+fP37Rpk91is2bNGhmCPKlPgA1XtGhR2eqHJFC/fn3KJMoH8WjKlCnEFlKsc2tEVBlEHsvsIWET+GvUqGFa2BWk8EmTJlE+WB1/MXr0aN5pjhw5RHvKEyBBUn7wlCGSHeVjH9RII0aMICHwziiZ7ty5w7Jm4zJKO8d5fCVDr169mBLlEAGAQsjYCYsPHz7s1q2bWUsk2unTp+/du5dfmCXAimrTpg0bd/bs2WLT/8YaUjKs72fPnpH2KD8oTuRji7dv3zJuxkEE3Lx585s3b0QHFAT+EiVKFCxYkJmUKVMma9asxk7eLVKkSMmSJe1ZAemCqQ4dOpQquH379nnz5rWfuhA+daRPHSkMBYueVEJVx2fg+w5E+tSRwlBwKGFXUK4tXryYa/k4AOlTRwpDYUfPgwcPWk9SRvrUkcJQcP7gNCMaWVdPnz51DgDO7ffv39nf5B0KHgILG5fImDlzZq6dEogNTTqnQnaGkSdPHtpTO2QGwz2S0Ny7d69hw4bEB3P2ffXqFQfcI0eOUGySpAlfHTp04CxLOuPIlj9//tWrV3Oo5bzC5MlEBBw6kOmIkpSfzI1UQIznvEY0C8wAIXAPL03wgrdv316tWjWs3HKGoo6/evUqB53u3bvTsnDhQnN6RkGUnDZtGhetW7cmaFJlcF5t1qwZOYRM3KlTJx4RgkUkTSv2yP4IElCdOnW4aNGixeXLl6mQz507R0ajhVKZW6ebY1myZAm/QGRkpMeXgAkARPp8+fIVLlzYSQtxcXHWoP4Ee0wh4ZWzQswtKcbrq64/ffqU3CmlCbCcWDYRERFcUw5s27bNNYj/bQIsd4oFp85JSEiIjo7mgvVDvmQHP3/+PD4+npYZM2Y4q8vrnwAZ9/z582bLUu2wB8ivfFtYWBiLikop5UohJNbw0gShMyYmhn3JijeNJ06coGpinRB2EhMTOblSCzr/LzIiTsCW1sO5lLN1hQoVuKa+CA8Pp8C2O6SV5KH9HaRPHSnURvrUkUJtpE8dKdRG+tSRQm2kTx0p1Eb61JFCbaRPHSnURvrUkUJtpE8dKdRG+tSRQm2kTx0p1Eb61JFCbaRPHSnURvq0+Q8/GvwRctRu4gAAAABJRU5ErkJggg==",
+      "icon": "data:image/png;base64,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",
       "target": "torosaba.net",
       "url": "https://torosaba.net/",
       "status": "up",
-      "responseTime": 477,
+      "responseTime": 408,
       "players": {
-        "online": 3,
+        "online": 4,
         "max": 100
       },
       "version": "1.12.2-26.3",
-      "lastChecked": "2026-11-15T07:38:53.000Z",
+      "lastChecked": "2026-11-15T14:58:27.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
         "7d": 100,
-        "30d": 49.67,
-        "all": 49.67
+        "30d": 50.66,
+        "all": 50.66
       },
       "avgResponseTime": {
-        "24h": 447,
-        "7d": 464,
-        "30d": 459,
-        "all": 459
+        "24h": 439,
+        "7d": 463,
+        "30d": 458,
+        "all": 458
       },
       "sparkline": [
-        484,
         530,
         375,
         553,
@@ -84,7 +83,8 @@
         430,
         450,
         428,
-        477
+        477,
+        408
       ],
       "bars": [
         {
@@ -217,28 +217,27 @@
       "target": "minuma.torosaba.net",
       "url": "https://torosaba.net/",
       "status": "up",
-      "responseTime": 460,
+      "responseTime": 373,
       "players": {
-        "online": 3,
+        "online": 4,
         "max": 100
       },
       "version": "1.12.2-26.3",
-      "lastChecked": "2026-11-15T07:38:53.000Z",
+      "lastChecked": "2026-11-15T14:58:27.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
         "7d": 100,
-        "30d": 49.67,
-        "all": 49.67
+        "30d": 50.66,
+        "all": 50.66
       },
       "avgResponseTime": {
-        "24h": 445,
-        "7d": 455,
-        "30d": 464,
-        "all": 464
+        "24h": 428,
+        "7d": 451,
+        "30d": 463,
+        "all": 463
       },
       "sparkline": [
-        552,
         479,
         455,
         595,
@@ -285,7 +284,8 @@
         432,
         431,
         444,
-        460
+        460,
+        373
       ],
       "bars": [
         {
@@ -418,28 +418,27 @@
       "target": "lgb.torosaba.net",
       "url": "https://torosaba.net/",
       "status": "up",
-      "responseTime": 598,
+      "responseTime": 488,
       "players": {
-        "online": 3,
+        "online": 4,
         "max": 100
       },
       "version": "1.12.2-26.3",
-      "lastChecked": "2026-11-15T07:38:53.000Z",
+      "lastChecked": "2026-11-15T14:58:27.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
         "7d": 100,
-        "30d": 49.67,
-        "all": 49.67
+        "30d": 50.66,
+        "all": 50.66
       },
       "avgResponseTime": {
-        "24h": 598,
-        "7d": 605,
-        "30d": 609,
-        "all": 609
+        "24h": 567,
+        "7d": 601,
+        "30d": 608,
+        "all": 608
       },
       "sparkline": [
-        722,
         559,
         536,
         714,
@@ -486,7 +485,8 @@
         549,
         580,
         620,
-        598
+        598,
+        488
       ],
       "bars": [
         {
@@ -619,28 +619,27 @@
       "target": "doro.torosaba.net",
       "url": "https://torosaba.net/",
       "status": "up",
-      "responseTime": 460,
+      "responseTime": 389,
       "players": {
-        "online": 3,
+        "online": 4,
         "max": 100
       },
       "version": "1.12.2-26.3",
-      "lastChecked": "2026-11-15T07:38:53.000Z",
+      "lastChecked": "2026-11-15T14:58:27.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
         "7d": 100,
-        "30d": 49.67,
-        "all": 49.67
+        "30d": 50.66,
+        "all": 50.66
       },
       "avgResponseTime": {
-        "24h": 455,
-        "7d": 474,
-        "30d": 471,
-        "all": 471
+        "24h": 437,
+        "7d": 470,
+        "30d": 469,
+        "all": 469
       },
       "sparkline": [
-        547,
         403,
         449,
         584,
@@ -687,7 +686,8 @@
         442,
         428,
         466,
-        460
+        460,
+        389
       ],
       "bars": [
         {
@@ -820,28 +820,27 @@
       "target": "toto.torosaba.net",
       "url": "https://torosaba.net/",
       "status": "up",
-      "responseTime": 499,
+      "responseTime": 380,
       "players": {
-        "online": 3,
+        "online": 4,
         "max": 100
       },
       "version": "1.12.2-26.3",
-      "lastChecked": "2026-11-15T07:38:53.000Z",
+      "lastChecked": "2026-11-15T14:58:27.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
         "7d": 100,
-        "30d": 49.67,
-        "all": 49.67
+        "30d": 50.66,
+        "all": 50.66
       },
       "avgResponseTime": {
-        "24h": 461,
-        "7d": 464,
-        "30d": 463,
-        "all": 463
+        "24h": 441,
+        "7d": 462,
+        "30d": 462,
+        "all": 462
       },
       "sparkline": [
-        436,
         473,
         382,
         505,
@@ -888,7 +887,8 @@
         406,
         466,
         456,
-        499
+        499,
+        380
       ],
       "bars": [
         {
@@ -1021,10 +1021,10 @@
       "target": "https://map.torosaba.net/",
       "url": "https://map.torosaba.net/",
       "status": "up",
-      "responseTime": 734,
+      "responseTime": 486,
       "players": null,
       "version": null,
-      "lastChecked": "2026-11-15T07:38:53.000Z",
+      "lastChecked": "2026-11-15T14:58:27.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
@@ -1033,13 +1033,12 @@
         "all": 100
       },
       "avgResponseTime": {
-        "24h": 622,
-        "7d": 635,
-        "30d": 367,
-        "all": 367
+        "24h": 577,
+        "7d": 630,
+        "30d": 371,
+        "all": 371
       },
       "sparkline": [
-        841,
         821,
         610,
         844,
@@ -1086,7 +1085,8 @@
         573,
         541,
         553,
-        734
+        734,
+        486
       ],
       "bars": [
         {
@@ -1219,10 +1219,10 @@
       "target": "https://3d-map.torosaba.net/",
       "url": "https://3d-map.torosaba.net/",
       "status": "up",
-      "responseTime": 674,
+      "responseTime": 459,
       "players": null,
       "version": null,
-      "lastChecked": "2026-11-15T07:38:53.000Z",
+      "lastChecked": "2026-11-15T14:58:27.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
@@ -1231,13 +1231,12 @@
         "all": 100
       },
       "avgResponseTime": {
-        "24h": 555,
-        "7d": 586,
-        "30d": 500,
-        "all": 500
+        "24h": 523,
+        "7d": 581,
+        "30d": 499,
+        "all": 499
       },
       "sparkline": [
-        767,
         694,
         600,
         798,
@@ -1284,7 +1283,8 @@
         478,
         500,
         505,
-        674
+        674,
+        459
       ],
       "bars": [
         {
@@ -1417,10 +1417,10 @@
       "target": "https://pass-api.torosaba.net/",
       "url": "https://pass-api.torosaba.net/",
       "status": "up",
-      "responseTime": 657,
+      "responseTime": 487,
       "players": null,
       "version": null,
-      "lastChecked": "2026-11-15T07:38:53.000Z",
+      "lastChecked": "2026-11-15T14:58:27.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
@@ -1429,13 +1429,12 @@
         "all": 100
       },
       "avgResponseTime": {
-        "24h": 586,
-        "7d": 618,
-        "30d": 333,
-        "all": 333
+        "24h": 564,
+        "7d": 613,
+        "30d": 336,
+        "all": 336
       },
       "sparkline": [
-        795,
         738,
         605,
         777,
@@ -1482,7 +1481,8 @@
         524,
         561,
         591,
-        657
+        657,
+        487
       ],
       "bars": [
         {
@@ -1615,10 +1615,10 @@
       "target": "https://sound.torosaba.net/",
       "url": "https://sound.torosaba.net/",
       "status": "up",
-      "responseTime": 171,
+      "responseTime": 264,
       "players": null,
       "version": null,
-      "lastChecked": "2026-11-15T07:38:53.000Z",
+      "lastChecked": "2026-11-15T14:58:27.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
@@ -1627,13 +1627,12 @@
         "all": 100
       },
       "avgResponseTime": {
-        "24h": 180,
-        "7d": 237,
+        "24h": 201,
+        "7d": 241,
         "30d": 254,
         "all": 254
       },
       "sparkline": [
-        161,
         252,
         417,
         213,
@@ -1680,7 +1679,8 @@
         183,
         177,
         211,
-        171
+        171,
+        264
       ],
       "bars": [
         {
@@ -1813,10 +1813,10 @@
       "target": "https://status.torosaba.net/",
       "url": "https://status.torosaba.net/",
       "status": "up",
-      "responseTime": 211,
+      "responseTime": 276,
       "players": null,
       "version": null,
-      "lastChecked": "2026-11-15T07:38:53.000Z",
+      "lastChecked": "2026-11-15T14:58:27.000Z",
       "error": null,
       "uptime": {
         "24h": 100,
@@ -1825,13 +1825,12 @@
         "all": 100
       },
       "avgResponseTime": {
-        "24h": 206,
-        "7d": 285,
-        "30d": 266,
-        "all": 266
+        "24h": 230,
+        "7d": 287,
+        "30d": 265,
+        "all": 265
       },
       "sparkline": [
-        244,
         325,
         408,
         308,
@@ -1878,7 +1877,8 @@
         186,
         207,
         268,
-        211
+        211,
+        276
       ],
       "bars": [
         {
