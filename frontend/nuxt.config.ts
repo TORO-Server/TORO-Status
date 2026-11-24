@@ -31,6 +31,7 @@ export default defineNuxtConfig({
         { name: "apple-mobile-web-app-status-bar-style", content: "black" },
       ],
       link: [
+        { rel: "canonical", href: "https://status.torosaba.net/" },
         { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon-180x180.png" },
         { rel: "icon", type: "image/svg+xml", href: "/logo.svg" },
       ],
